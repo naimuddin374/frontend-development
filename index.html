@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class 18</title>
+
+    <style>
+      #tamim-mata-moda {
+        color: green;
+        font-size: 50px;
+        margin-left: 100px;
+        background-color: red;
+        width: 300px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Line One</h1>
+    <h1>Line Two</h1>
+    <p id="tamim-mata-moda">Line Three</p>
+
+    <script>
+      //   const lineThree = document.getElementById("tamim-mata-moda");
+      //   lineThree.textContent = "Line Three";
+      //   lineThree.style.color = "blue";
+      //   lineThree.style.fontSize = "50px";
+      //   lineThree.style.marginLeft = "100px";
+      //   lineThree.style.backgroundColor = "red";
+      //   lineThree.style.width = "300px";
+      //   lineThree.style.padding = "20px";
+
+      //   Creating a new box element and adding it to the document
+      const boxElement = document.createElement("div");
+      boxElement.id = "box";
+      document.body.appendChild(boxElement);
+
+      //   Targeting the box element and adding content to it
+      const box = document.getElementById("box");
+      box.innerHTML = "<h1>Line One</h1>";
+      box.innerHTML += "<h1>Line Two</h1>";
+      box.innerHTML += "<h1 id='tamim-good-man'></h1>";
+
+      //   Targeting the new line three element and applying styles
+      const lineThree2 = document.getElementById("tamim-good-man");
+      lineThree2.textContent = "Line Three";
+      lineThree2.style.color = "blue";
+      lineThree2.style.fontSize = "50px";
+      lineThree2.style.marginLeft = "100px";
+      lineThree2.style.backgroundColor = "red";
+      lineThree2.style.width = "300px";
+      lineThree2.style.padding = "20px";
+    </script>
+  </body>
+</html>
