@@ -28,11 +28,11 @@ function add(a, b) {
 // add(100, 150);
 
 // Function with return value and parameters
-function concatParams(firstName, lastName, age, profession) {
-  //   const result = `My name is ${firstName} ${lastName}, I am ${age} years old and I am a ${profession}.`;
-  const result = `Result: ${firstName} ${lastName} is a ${profession}, He is ${age} years old.`;
-  return result;
-}
+// function concatParams(firstName, lastName, age, profession) {
+//   //   const result = `My name is ${firstName} ${lastName}, I am ${age} years old and I am a ${profession}.`;
+//   const result = `Result: ${firstName} ${lastName} is a ${profession}, He is ${age} years old.`;
+//   return result;
+// }
 // const person1 = concatParams("Md", "Tamim", 25, "Teacher");
 // console.log(person1);
 // const person2 = concatParams("Md", "Rezon", 22, "Student");
@@ -45,27 +45,27 @@ function concatParams(firstName, lastName, age, profession) {
 // console.log(person5);
 
 // Example: Sum function
-function sum(a, b) {
-  const result = a + b;
-  console.log("I am inside sum function!");
-  return result;
-}
+// function sum(a, b) {
+//   const result = a + b;
+//   console.log("I am inside sum function!");
+//   return result;
+// }
 // const sum1 = sum(30, 20);
 // console.log("Sum 1:", sum1);
 
-function myFunc(name, age, profession) {
-  let result = `My name is ${name}`;
+// function myFunc(name, age, profession) {
+//   let result = `My name is ${name}`;
 
-  if (age < 18) {
-    result += `, I am ${age} years old and I am a student.`;
-    console.log("console log 01");
-    return result;
-  } else {
-    console.log("console log 02");
-    result += `, I am ${age} years old and I am a ${profession}.`;
-    return result;
-  }
-}
+//   if (age < 18) {
+//     result += `, I am ${age} years old and I am a student.`;
+//     console.log("console log 01");
+//     return result;
+//   } else {
+//     console.log("console log 02");
+//     result += `, I am ${age} years old and I am a ${profession}.`;
+//     return result;
+//   }
+// }
 
 // const person1 = myFunc("Tamim", 25, "Teacher");
 // const person2 = myFunc("Rezon", 17, "Doctor");
@@ -79,39 +79,69 @@ function myFunc(name, age, profession) {
 // console.log(person4);
 // console.log(person5);
 
-function sum(a, b) {
-  const result = a + b;
-  return result;
-}
+// function sum(a, b) {
+//   const result = a + b;
+//   return result;
+// }
 // console.log(sum(10, 20)); // 30
 // console.log(sum(20, 15)); // 35
 // console.log(sum(100, 200)); // 300
 
-function subtract(a, b) {
-  const result = a - b;
-  return result;
-}
+// function subtract(a, b) {
+//   const result = a - b;
+//   return result;
+// }
 // console.log(subtract(20, 10)); // 10
 // console.log(subtract(100, 50)); // 50
 // console.log(subtract(200, 100)); // 100
 
-function multiply(a, b) {
-  console.log(`A is: ${a}, B is: ${b}`);
-  const result = a * b;
-  return result;
-}
+// function multiply(a, b) {
+//   console.log(`A is: ${a}, B is: ${b}`);
+//   const result = a * b;
+//   return result;
+// }
 // console.log(multiply(10, 20)); // 200
 // console.log(multiply(5, 6)); // 30
 
-function divisionTamim(a, b, c, d) {
-  const result1 = a + b;
-  const result2 = c - d;
+// function divisionTamim(a, b, c, d) {
+//   const result1 = a + b;
+//   const result2 = c - d;
 
-  const result = result1 + result2;
-  return result;
-}
+//   const result = result1 + result2;
+//   return result;
+// }
 
-console.log(divisionTamim(100, 20, 30, 40)); // 100
-console.log(divisionTamim(50, 15, 25, 35)); // 80
+// console.log(divisionTamim(100, 20, 30, 40)); // 100
+// console.log(divisionTamim(50, 15, 25, 35)); // 80
 
 // Assignment: 10 functions
+
+// What is function in Javascript?
+// In JavaScript function is a block of code to perform a particular task.
+// There is mainly three parts
+// 1. Input
+// 2. Process
+// 3. Return
+
+// Example
+function a(name, amount) {
+  // 1. Input
+  // const result = "Dear " + name + ", Hope you are doing well." + " You have " + amount + " on your account."; // 2. Process
+  const result = `Dear ${name}, Hope you are doing well. You have ${amount} on your account.`;
+  // Dear Al Amin, Hope you are doing well. You have 500 on your account.
+  return result; // 3. Return
+}
+
+const result1 = a("Al Amin", 500);
+const result2 = a("Tamim Hossain", 3000);
+console.log(result1);
+console.log(result2);
+
+// let name = "Tamim";
+// let age = 33;
+// console.log(age); // Can't access age
+
+// function sumValue(a, b) {
+//   return a + b;
+// }
+// console.log(sumValue(10, 15)); // Can access
