@@ -12,6 +12,6 @@ var personName = "Tamim Hossain";
 // console.log(personName.indexOf("H"));
 // console.log(personName.lastIndexOf("i"));
 
-let text = "This is a placeholder text. Please don't panic.";
+let text = "This is a placeholder text. \n Please don't panic.";
 console.log(text.toLowerCase());
-console.log(text.toUpperCase());
+// console.log(text.toUpperCase());
