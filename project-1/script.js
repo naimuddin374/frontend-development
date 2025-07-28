@@ -215,3 +215,19 @@ form.addEventListener("submit", function (event) {
   console.log(`State: ${state}`);
   console.log(`City: ${city}`);
 });
+
+/*
+1. Create a html form with the following fields:
+    - Name (text input)
+    - Email (text input)
+    - Password (password input)
+    - Phone (text input)
+    - Age (number input)
+    - ....
+
+  2. Design with css
+  3. Dynamic country, state, city dropdowns
+  4. Add validation to the form using javascript on submit
+  5. Remove validation error messages before showing new error messages
+  6. Console form values on submit
+  */
