@@ -1,3 +1,28 @@
+// Way to define a variable
+// Const, let, var
+// Var a global variable
+// Let a block scoped variable
+// Const a constant variable, cannot be reassigned
+// var name = "John Doe"; // Global variable
+// name = "Tamim Iqbal"; // Reassigning a global variable
+
+// let age = 25; // Block scoped variable
+// age = 30; // Reassigning a block scoped variable
+
+// const email = "tamim@gmail.com"
+// email = "abc@gmail.com"
+
+// const person ={
+//   name: 'Tamim Iqbal',
+//   age: 30,
+//   email: 'tamim@gmail.com',
+//   address: 'dhaka',
+//   profession: 'Student'
+// }
+
+// person.name = "Shakib Al Hasan"; // Reassigning a property of an object
+// person = 20 // This will throw an error because we cannot reassign a constant variable
+
 const country = document.getElementById("country");
 country.onchange = function () {
   const value = country.value;
@@ -81,6 +106,11 @@ state.onchange = function () {
 // Function to create a new input field
 function createErrorMessage(fieldName, message = "") {
   const errorMessage = document.createElement("p");
+  // if(message){
+  //   errorMessage.textContent = message;
+  // }else{
+  //   errorMessage.textContent = `Please enter your ${fieldName.name}.`;
+  // }
   errorMessage.textContent = message
     ? message
     : `Please enter your ${fieldName.name}.`;
@@ -94,9 +124,7 @@ function createErrorMessage(fieldName, message = "") {
 }
 
 // Form validation
-function validateForm(event) {
-  event.preventDefault();
-
+function validateForm() {
   // Remove any existing error message for this field
   const existingErrors = document.getElementsByClassName("error-message");
   // Convert HTMLCollection to array to avoid issues with live collection
@@ -183,6 +211,10 @@ function validateForm(event) {
 }
 
 // Form submission
+// document.getElementById("city") // Return single element
+// document.getElementsByTagName("form") // Return multiple elements
+// document.getElementsByClassName("form") // Return multiple elements
+
 const form = document.getElementsByTagName("form")[0];
 form.addEventListener("submit", function (event) {
   event.preventDefault(); // Prevent default form submission
