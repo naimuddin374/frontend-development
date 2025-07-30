@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-wrapper">
+        <h1>Student Registration Form</h1>
+        <form id="studentForm">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+
+            <div class="form-group">
+              <label for="age">Age *</label>
+              <input
+                type="number"
+                id="age"
+                name="age"
+                min="16"
+                max="100"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="department">Department *</label>
+            <select id="department" name="department" required>
+              <option value="" disabled selected>Select Department</option>
+              <option value="computer-science">Computer Science</option>
+              <option value="electrical-engineering">
+                Electrical Engineering
+              </option>
+              <option value="mechanical-engineering">
+                Mechanical Engineering
+              </option>
+              <option value="civil-engineering">Civil Engineering</option>
+              <option value="business-administration">
+                Business Administration
+              </option>
+              <option value="economics">Economics</option>
+              <option value="mathematics">Mathematics</option>
+              <option value="physics">Physics</option>
+              <option value="chemistry">Chemistry</option>
+              <option value="biology">Biology</option>
+              <option value="english">English Literature</option>
+              <option value="psychology">Psychology</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="country">Country *</label>
+            <select id="country" name="country" required>
+              <option value="" disabled selected>Select Country</option>
+              <option value="bd">Bangladesh</option>
+              <option value="usa">United States</option>
+              <option value="uk">United Kingdom</option>
+              <option value="canada">Canada</option>
+              <option value="australia">Australia</option>
+              <option value="india">India</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="state">State/Division *</label>
+              <select id="state" name="state" required>
+                <option value="" disabled selected>Select State</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="city">City *</label>
+              <select id="city" name="city" required>
+                <option value="" disabled selected>Select City</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="button-group">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="reset" class="btn btn-secondary">Reset</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
