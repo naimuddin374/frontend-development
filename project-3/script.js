@@ -24,27 +24,9 @@ fetch("https://jsonplaceholder.typicode.com/posts")
           <h2>ID: ${post.id} - ${post.title}</h2>
           <img src="${imageUrl}" alt="Post Image">
           <p>${post.body}</p>
-          <a href="#">Read More</a>
+          <a href="./post-detail/index.html?id=${post.id}">Read More...</a>
         `;
       mainDiv.appendChild(postWrapper);
     });
   })
   .catch((error) => console.error("Error fetching posts:", error));
-
-// fetch("https://jsonplaceholder.typicode.com/posts")
-//   .then((response) => response.json())
-//   .then((data) => {
-//     console.log("Posts data:", data);
-//     const postsContainer = document.querySelector("main");
-//     data.forEach((post) => {
-//       const postWrapper = document.createElement("div");
-//       postWrapper.classList.add("post-wrapper");
-//       postWrapper.innerHTML = `
-//         <h2>${post.title}</h2>
-//         <p>${post.body}</p>
-//         <a href="#">Read More</a>
-//       `;
-//       postsContainer.appendChild(postWrapper);
-//     });
-//   })
-//   .catch((error) => console.error("Error fetching posts:", error));
